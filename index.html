@@ -4,17 +4,110 @@
   <meta charset="UTF-8">
   <title>Georgios Antoniou</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; }
-    .container { max-width: 800px; margin: auto; }
-    h1 { color: #333; }
-    p { line-height: 1.5; }
+    body {
+      margin-top: 70px;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0e1a40, #2e3c7e);
+      color: white;
+      padding: 80px 0;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+    }
+    .about-image {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .section-title {
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+    .keywords {
+      list-style: none;
+      padding: 0;
+    }
+    .keywords li {
+      display: inline-block;
+      background: #e9ecef;
+      color: #333;
+      padding: 0.5rem 1rem;
+      margin: 0.25rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding: 2rem 0;
+      background: #f8f9fa;
+      text-align: center;
+      color: #666;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Georgios Antoniou</h1>
-    <p>I am a theoretical physicist working on gravitational fields and exploring alternatives to Einstein's General Relativity. Currently I am a postdoctoral researcher at INFN Roma 1 and Sapienza University of Rome, where I investigate the dynamics of compact objects and gravitational-wave signals in the strong-field regime. My work aims to test General Relativity and its alternatives using observations from gravitational-wave detectors. This simple page serves as a starting point for my online presence.</p>
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Georgios Antoniou</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">CV</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h1>Georgios Antoniou</h1>
+          <p>I am a postdoctoral researcher at INFN Rome and Sapienza University of Rome, working on strong gravitational physics and exploring alternatives to General Relativity. My work aims to test gravity theories using observations of compact objects and gravitational waves.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <!-- Placeholder for profile image -->
+          <img src="https://via.placeholder.com/250x250?text=Profile+Image" class="about-image" alt="Profile image placeholder">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Research Interests</h2>
+    <ul class="keywords">
+      <li>Strong gravity</li>
+      <li>Modified gravity</li>
+      <li>Cosmology</li>
+      <li>Compact objects</li>
+      <li>Gravitational waves</li>
+      <li>Quasinormal modes</li>
+      <li>Well-posedness</li>
+    </ul>
+
+    <h2 class="section-title">Selected Publications</h2>
+    <p>This section will be updated with selected publications.</p>
+  </section>
+
+  <footer>
+    © 2026 Georgios Antoniou. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
